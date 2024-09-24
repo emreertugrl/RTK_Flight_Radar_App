@@ -420,3 +420,28 @@ header {
   padding: 10px 15px;
   font-size: 15px;
 }
+
+/* pagination */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+
+  li {
+    padding: 10px 15px;
+    background: black;
+  }
+
+  li:first-child {
+    border-radius: 8px 0 0 8px;
+    white-space: nowrap;
+  }
+  li:first-child {
+    border-radius: 0 8px 8px 0;
+    white-space: nowrap;
+  }
+  .selected {
+    background: #535bf2;
+  }
+}
