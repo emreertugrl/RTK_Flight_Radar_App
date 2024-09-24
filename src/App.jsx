@@ -6,6 +6,7 @@ import Map from "./page/Map";
 import Button from "./components/button";
 import { getFlights } from "./redux/actions";
 import { useDispatch } from "react-redux";
+import Modal from "./components/Modal";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -26,7 +27,7 @@ const App = () => {
         <Route path="/list" element={<List />} />
       </Routes>
       {/* detay id statetinde elaman varsa ekrana modal aç */}
-      {detailId && <h1>MODAL</h1>}
+      {detailId && <Modal id={detailId} close={() => setDetailId(null)} />}
     </BrowserRouter>
   );
 };
