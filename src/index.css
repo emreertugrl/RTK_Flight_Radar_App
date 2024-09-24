@@ -413,3 +413,10 @@ header {
     background: rgb(205, 170, 0);
   }
 }
+
+/* Table */
+
+.button {
+  padding: 10px 15px;
+  font-size: 15px;
+}
