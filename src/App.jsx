@@ -15,6 +15,14 @@ const App = () => {
   // tr sınırları içerisindeki uçuşları al ve store aktar
   useEffect(() => {
     dispatch(getFlights());
+    // const timer = setInterval(() => {
+    //   dispatch(getFlights());
+    // }, 20000);
+
+    // kullanıcı sayfadan ayrılınca sayacı temizler
+    // return () => {
+    //   clearInterval(timer);
+    // };
   }, []);
   //
   //
